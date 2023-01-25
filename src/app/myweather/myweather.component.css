@@ -49,6 +49,13 @@ div{
         height: 60px;
         
       }
+      .main{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 500px;
+        background-color: aqua;
+      }
 
 
       
