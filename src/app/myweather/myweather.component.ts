@@ -31,4 +31,8 @@ export class WeatherComponent implements OnInit {
           console.log(error);
         });
   }
+  getUrl()
+{
+  return "url('https://www.azamara.com/sites/default/files/heros/cape-town-south-africa-1800x1000_1.jpg')";}
+  
 }
