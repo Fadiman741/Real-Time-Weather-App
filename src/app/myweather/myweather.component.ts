@@ -8,24 +8,27 @@ import { ApixuService } from "../apixu.service";
   styleUrls: ["./myweather.component.css"]
 })
 export class WeatherComponent implements OnInit {
-  public weatherSearchForm!: FormGroup;
   public weatherData: any;
 
   constructor(
-    private formBuilder: FormBuilder,
+
     private apixuService: ApixuService
   ) {}
 
   ngOnInit() {
-    this.weatherSearchForm = this.formBuilder.group({
-      location: [""]
-    });
+    this. retrieveWeatherData();
+   
   }
 
-  sendToAPIXU(formValues: { location: string; }) {
-    this.apixuService.getWeather(formValues.location).subscribe(data => {
-      this.weatherData = data;
-      console.log(this.weatherData);
-    });
+  retrieveWeatherData() {
+    this.apixuService.getWeather()
+      .subscribe(
+        data => {
+          this.weatherData = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
   }
 }

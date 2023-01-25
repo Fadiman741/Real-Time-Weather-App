@@ -1,18 +1,25 @@
-<div class="maincontainer">
+ <div class="maincontainer"  [ngStyle]="{background-image: '(url('./images/back.png')}'" >
   <div class="container">
-    <div><h3 >Weather Details:</h3>
-     <p >Temperature in Degrees:{{this.weatherData?.current.temperature}}</p>
-    <p>Location :{{this.weatherData?.location.name}},{{this.weatherData?.location.country}}</p>
+    <div>
+     <p ><sup>Temperature :</sup>{{this.weatherData?.current.temperature}}<span>&#8451;</span></p>
+     <hr>
+     <p style="margin-top:1px;font-size:30px;font-weight: 100;text-align: center;">{{this.weatherData?.current.weather_descriptions}}</p>
+
     </div>
   </div>
 </div>
-<div >
-  <h3 >Search for Weather:</h3>
-  <form [formGroup]="weatherSearchForm"  (ngSubmit)="sendToAPIXU(weatherSearchForm.value)">
-    <div >
-    </div>
-     <div > 
-      <button type="submit" > Refresh Data</button>
-     </div>
-   </form> 
+<div class="bottomcontainer" style="background-color: aqua;" >
+  <h3 style="text-align:center;">Today's Weather:</h3>
+  <hr>
+  <p>Humidity :    {{this.weatherData?.current.humidity}}<span>&#37;</span></p>
+  <hr>
+  <p>Cloud Cover :     {{this.weatherData?.current.cloudcover}}<span>&#37;</span></p>
+  <hr>
+  <p>Pressure :     {{this.weatherData?.current.pressure}} Pa</p>
+  <hr>
+  <p>wind speed :     {{this.weatherData?.current.wind_speed}} km/h</p>
+  <hr>
+  <p>     {{this.weatherData?.location.name}},{{this.weatherData?.location.country}}</p>
+  <hr>
+  
 </div>
