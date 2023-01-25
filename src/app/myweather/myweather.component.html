@@ -1,10 +1,10 @@
- <div class="maincontainer"  [ngStyle]="{background-image: '(url('./images/back.png')}'" >
+ <div class="maincontainer"  >
   <div class="container">
     <div>
-     <p ><sup>Temperature :</sup>{{this.weatherData?.current.temperature}}<span>&#8451;</span></p>
+     <p Style="margin-top:10px;padding-top: 30px;"><sup>Temperature :</sup><span style="font-size:50px">{{this.weatherData?.current.temperature}}&#8451;</span></p>
+     <p Style="margin-top:10px;padding-top: 30px;font-size: 15;">{{this.weatherData?.location.name}}</p>
      <hr>
-     <p style="margin-top:1px;font-size:30px;font-weight: 100;text-align: center;">{{this.weatherData?.current.weather_descriptions}}</p>
-
+     <p style="margin-top:00px;font-size:30px;font-weight: 100;text-align: center;">{{this.weatherData?.current.weather_descriptions}}</p>
     </div>
   </div>
 </div>
