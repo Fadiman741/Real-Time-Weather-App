@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { FormBuilder, FormGroup } from "@angular/forms";
+
 import { ApixuService } from "../apixu.service";
 
 @Component({
@@ -19,6 +19,7 @@ export class WeatherComponent implements OnInit {
     this. retrieveWeatherData();
    
   }
+  
 
   retrieveWeatherData() {
     this.apixuService.getWeather()

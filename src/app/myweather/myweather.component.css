@@ -10,29 +10,31 @@ div{
       .maincontainer {
         
         width: 100%;
-        padding: 10px;
+
         height: 30vh;
         background-color:white;
         border-bottom-right-radius: 70px;
         border-bottom-left-radius: 80px;
       }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+    
       .maincontainer p{
-        font-size: 30px;
-        text-align: center;
+        font-size: 20px;
+        text-align: left;
+        padding-right: 10px;
+        margin-left: 60%;
        
-       
+      }
+      .maincontainer hr{
+        width: 40%;
+        margin-left: 60%;
+        
+
       }
       .bottomcontainer{
         width: 100%;
         padding: 30px;
         height: 70vh;
+        
 
       }
       .bottomcontainer p{
