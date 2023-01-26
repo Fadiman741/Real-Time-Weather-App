@@ -25,8 +25,9 @@ div{
        
       }
       .maincontainer hr{
-        width: 40%;
+        width: 150px;
         margin-left: 60%;
+
         
 
       }
@@ -37,10 +38,17 @@ div{
         
 
       }
+      .bottomcontainer hr{
+    
+          height: 10px;
+          border: 0;
+          box-shadow: 0 10px 10px -10px #8c8b8b inset;
+      }
       .bottomcontainer p{
         width: 100%;
         padding: 30px;
         text-align: center;
+        font-size: 13px;
 
 
       }  
@@ -56,7 +64,31 @@ div{
         margin-right: auto;
         display: block;
         max-width: 500px;
-        background-color: aqua;
+        background-color: rgb(244, 245, 245);
+      }
+
+
+
+      .column {
+        float: left;
+        padding: 10px;
+
+      }
+      
+      .left, .right {
+        width: 45%;
+      }
+      
+      .middle {
+        width: 10%;
+        text-align: center;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
       }
 
 

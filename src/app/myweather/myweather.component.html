@@ -5,25 +5,47 @@
       <div>
         <p Style="padding-top:10px;">Temperature </p>
        <p Style="padding-top: 0px;"><span style="font-size:80px">{{this.weatherData?.current.temperature}}&#8451;</span></p>
-       <p Style="margin-top:15px;padding-top: 30px;font-size: 15;">{{this.weatherData?.location.name}}</p>
+       <p  Style="margin-top:15px;padding-top: 30px;font-size: 15;">{{this.weatherData?.location.name}}</p>
        <hr >
        <p style="margin-top:00px;font-size:20px;font-weight: 100;">{{this.weatherData?.current.weather_descriptions}}</p>
       </div>
     </div>
   </div>
-  <div class="bottomcontainer" style="background-color: aqua;" >
-    <h3 style="text-align:center;">Today's Weather:</h3>
-    <hr>
-    <p>Humidity :    {{this.weatherData?.current.humidity}}<span>&#37;</span></p>
-    <hr>
-    <p>Cloud Cover :     {{this.weatherData?.current.cloudcover}}<span>&#37;</span></p>
-    <hr>
-    <p>Pressure :     {{this.weatherData?.current.pressure}} Pa</p>
-    <hr>
-    <p>wind speed :     {{this.weatherData?.current.wind_speed}} km/h</p>
-    <hr>
-    <p>     {{this.weatherData?.location.name}},{{this.weatherData?.location.country}}</p>
-    <hr>
+  <div class="bottomcontainer" style="background-color: rgb(244, 245, 245);" >
+    <h3 style="text-align:center;padding-bottom: 30px;">Today's weather forecast in  {{this.weatherData?.location.name}}</h3>
+    <div class="row">
+      <div class="column left" >
+        <hr>
+        <p>Humidity</p>
+        <hr>
+        <p>Cloud Cover </p>
+        <hr>
+        <p>Pressure </p>
+        <hr>
+        <p>wind speed </p>
+        <hr>
+        <p> Location</p>
+        <hr>
+      </div>
+      <div class="column middle">
+        <p>:</p>
+      </div>
+      <div class="column right">
+        <hr>
+        <p>{{this.weatherData?.current.humidity}}<span>&#37;</span></p>
+        <hr>
+        <p>{{this.weatherData?.current.cloudcover}}<span>&#37;</span></p>
+        <hr>
+        <p>{{this.weatherData?.current.pressure}} Pa</p>
+        <hr>
+        <p>{{this.weatherData?.current.wind_speed}} km/h</p>
+        <hr>
+        <p>     {{this.weatherData?.location.name}},{{this.weatherData?.location.country}}</p>
+        <hr>
+      </div>
+    </div>
+   
+   
     
   </div>
   
