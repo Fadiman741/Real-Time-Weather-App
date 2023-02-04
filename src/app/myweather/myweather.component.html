@@ -1,8 +1,10 @@
 <div class="main">
 
   <div class="maincontainer" [ngStyle]="{'background-image': getUrl(),'background-size': '100% 100%' }" >
+    <P>{{this.weatherData?.location.localtime}}</P>
     <div class="container">
       <div>
+       
         <p Style="padding-top:10px;">Temperature </p>
        <p Style="padding-top: 0px;"><span style="font-size:80px">{{this.weatherData?.current.temperature}}&#8451;</span></p>
        <p  Style="margin-top:15px;padding-top: 30px;font-size: 15;">{{this.weatherData?.location.name}}</p>
@@ -40,7 +42,7 @@
         <hr>
         <p>{{this.weatherData?.current.wind_speed}} km/h</p>
         <hr>
-        <p>     {{this.weatherData?.location.name}},{{this.weatherData?.location.country}}</p>
+        <p>{{this.weatherData?.location.name}},{{this.weatherData?.location.country}}</p>
         <hr>
       </div>
     </div>
