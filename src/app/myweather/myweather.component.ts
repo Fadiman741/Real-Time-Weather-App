@@ -34,6 +34,6 @@ export class WeatherComponent implements OnInit {
   }
   getUrl()
 {
-  return "url('https://www.azamara.com/sites/default/files/heros/cape-town-south-africa-1800x1000_1.jpg')";}
+  return "url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/15/13/istock-671323338.jpg?width=1200')";}
   
 }
