@@ -32,8 +32,8 @@ export class WeatherComponent implements OnInit {
           console.log(error);
         });
   }
-  getUrl()
-{
-  return "url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/15/13/istock-671323338.jpg?width=1200')";}
+//   getUrl()
+// {
+//   return "url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/15/13/istock-671323338.jpg?width=1200')";}
   
 }
